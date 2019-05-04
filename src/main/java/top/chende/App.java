@@ -1,4 +1,4 @@
-package chende.top;
+package top.chende;
 
 /**
  * Hello world!

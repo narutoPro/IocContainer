@@ -1,4 +1,4 @@
-package chende.top;
+package top.chende;
 
 import static org.junit.Assert.assertTrue;
 

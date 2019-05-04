@@ -1,4 +1,4 @@
-package chende.top.demo;
+package top.chende.demo;
 
 import java.io.Serializable;
 
