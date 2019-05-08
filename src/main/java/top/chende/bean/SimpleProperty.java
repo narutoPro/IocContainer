@@ -8,12 +8,12 @@ package top.chende.bean;
 public class SimpleProperty {
 
     String name;
-    Object value;
+    String value;
 
     public SimpleProperty() {
     }
 
-    public SimpleProperty(String name, Object value) {
+    public SimpleProperty(String name, String value) {
         this.name = name;
         this.value = value;
     }
@@ -42,11 +42,11 @@ public class SimpleProperty {
         this.name = name;
     }
 
-    public Object getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(Object value) {
+    public void setValue(String value) {
         this.value = value;
     }
 }

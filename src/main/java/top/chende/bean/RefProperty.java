@@ -6,8 +6,8 @@ package top.chende.bean;
  * @description:
  */
 public class RefProperty {
-    String name;
-    String ref;
+    String name;//引用类型域的名字
+    String ref; //引用类型域的值 即对应ref id
 
     public RefProperty() {
     }

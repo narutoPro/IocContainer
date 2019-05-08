@@ -19,7 +19,7 @@ public class TestBeanDescription {
         b.setClassname("top.chende.demo.Demo");
         b.setId("didiguo");
         b.addSimpleProperty(new SimpleProperty("name", "吴迪"));
-        b.addSimpleProperty(new SimpleProperty("age", 18));
+        b.addSimpleProperty(new SimpleProperty("age", "18"));
         Gson gson = new Gson();
         String demoStr = gson.toJson(b);
         System.out.println(demoStr);
