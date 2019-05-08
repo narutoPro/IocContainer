@@ -1,24 +1,14 @@
 package top.chende.demo;
 
-import java.io.Serializable;
-
 /**
  * @author: chende
- * @date: 2019/5/4 16:42
+ * @date: 2019/5/5 20:43
  * @description:
  */
-public class Demo  {
-
-    public  String name;
-
-    public  int age;
-
-    public Demo(){};
-
-    public Demo(String name,int age){
-        this.name=name;
-        this.age=age;
-    }
+public class Demo22 {
+    String name;
+    int age;
+    Demo ref;
 
     public String getName() {
         return name;
@@ -36,8 +26,11 @@ public class Demo  {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "name:"+name+"  age:"+age;
+    public Demo getRef() {
+        return ref;
+    }
+
+    public void setRef(Demo ref) {
+        this.ref = ref;
     }
 }
