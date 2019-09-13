@@ -13,6 +13,16 @@ public class Demo  {
 
     public  int age;
 
+    private char sex;
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
     public Demo(){};
 
     public Demo(String name,int age){
@@ -38,6 +48,6 @@ public class Demo  {
 
     @Override
     public String toString() {
-        return "name:"+name+"  age:"+age;
+        return "name:"+name+"  age:"+age+"sex:"+sex;
     }
 }

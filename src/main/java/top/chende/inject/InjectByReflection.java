@@ -22,7 +22,7 @@ public class InjectByReflection {
             Demo22 dd= (Demo22) demoClass.getConstructor().newInstance();
             Field[] fields=demoClass.getDeclaredFields();
             Method  m=demoClass.getDeclaredMethod("setName",String.class);
-
+            m.setAccessible(true);
             m.invoke(dd,"吴迪");
             for (Field f:fields
                  ) {

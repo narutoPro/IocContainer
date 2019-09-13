@@ -10,16 +10,15 @@ import java.util.List;
  */
 public class BeanDescription {
 
-    String id;
+    String id;  //bean id
     String classname;
     List<SimpleProperty> simpleProperties;
-    List<RefProperty> refProperties;
+    List<BeanDescription> refProperties; //引用类型
 
-    // 先不考虑单例吧  默认都是单例 String scope;
+    // 先不考虑单例吧  默认都是单例
 
     public BeanDescription() {
-   //     this.simpleProperties = new ArrayList<>();
-   //     this.refProperties = new ArrayList<>();
+
     }
 
     public void addSimpleProperty(SimpleProperty simpleProperty) {
@@ -28,7 +27,7 @@ public class BeanDescription {
         simpleProperties.add(simpleProperty);
     }
 
-    public void addRefProperty(RefProperty ref){
+    public void addRefProperty(BeanDescription ref){
         if (this.refProperties==null)
             this.refProperties=new ArrayList<>();
         refProperties.add(ref);
@@ -41,11 +40,11 @@ public class BeanDescription {
         this.simpleProperties = simpleProperties;
     }
 
-    public List<RefProperty> getRefProperties() {
+    public List<BeanDescription> getRefProperties() {
         return refProperties;
     }
 
-    public void setRefProperties(List<RefProperty> refProperties) {
+    public void setRefProperties(List<BeanDescription> refProperties) {
         this.refProperties = refProperties;
     }
 

@@ -1,13 +1,14 @@
 package top.chende;
 
-/**
- * Hello world!
- *
- */
-public class App 
+
+import top.chende.factory.SimpleIocBeanFactory;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String confPath="/Users/chende/Desktop/jsonconf.txt";
+        SimpleIocBeanFactory factory=new SimpleIocBeanFactory(confPath);
+        factory.initBeans();
     }
 }

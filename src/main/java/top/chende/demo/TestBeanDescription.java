@@ -20,10 +20,11 @@ public class TestBeanDescription {
         b.setId("didiguo");
         b.addSimpleProperty(new SimpleProperty("name", "吴迪"));
         b.addSimpleProperty(new SimpleProperty("age", "18"));
+        b.addSimpleProperty(new SimpleProperty("sex",new Character('f')));
         Gson gson = new Gson();
         String demoStr = gson.toJson(b);
         System.out.println(demoStr);
-        FileWriter fileWriter = new FileWriter("/Users/chende/Desktop/jsonconf.txt");
+        FileWriter fileWriter = new FileWriter("/Users/chende/Desktop/jsonconf2.txt");
         fileWriter.write(demoStr);
         fileWriter.close();
     }
