@@ -10,5 +10,6 @@ public class App
         String confPath="/Users/chende/Desktop/jsonconf.txt";
         SimpleIocBeanFactory factory=new SimpleIocBeanFactory(confPath);
         factory.initBeans();
+
     }
 }
